@@ -1,9 +1,9 @@
-package io.github.mfaisalkhatri.tests;
+package com.baeldung.tests;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import io.github.mfaisalkhatri.pages.CameraProductPage;
+import com.baeldung.pages.CameraProductPage;
 
 public class VisualRegressionTests extends BaseTest {
 

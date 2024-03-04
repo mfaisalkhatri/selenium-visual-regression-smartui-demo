@@ -1,4 +1,4 @@
-package io.github.mfaisalkhatri.pages;
+package com.baeldung.pages;
 
 import java.text.MessageFormat;
 

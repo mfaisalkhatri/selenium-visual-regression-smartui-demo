@@ -1,9 +1,9 @@
-package io.github.mfaisalkhatri.tests;
+package com.baeldung.tests;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-import io.github.mfaisalkhatri.drivers.DriverManager;
+import com.baeldung.drivers.DriverManager;
 
 public class BaseTest {
 
