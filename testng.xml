@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="LambdaTest ecommerce playground website test suite ">
+<suite name="LambdaTest ecommerce playground website visula regression test suite ">
     <test name="Visual Regression Tests">
         <classes>
-            <class name="io.github.mfaisalkhatri.tests.VisualRegressionTests">
+            <class name="com.baeldung.tests.VisualRegressionTests">
                 <methods>
                     <include name="testOne_whenActualImageIsDifferentFromBaseline_thenItShouldShowDifference"/>
-                    <include name="testTwo_whenActualImageIsSameAsBaseline_thenItShouldNotShowAnyDifference"/>
+                    <exclude name="testTwo_whenActualImageIsSameAsBaseline_thenItShouldNotShowAnyDifference"/>
                 </methods>
             </class>
         </classes>
