@@ -20,14 +20,13 @@ public class VisualRegressionTests extends BaseTest {
         this.driverManager.getDriver()
             .get("https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=30");
 
-        cameraProductPage.checkVisual();
+        this.cameraProductPage.checkVisual();
     }
 
     @Test
     public void testTwo_whenActualImageIsSameAsBaseline_thenItShouldNotShowAnyDifference() {
         this.driverManager.getDriver()
-            .get("https://ecommerce-playground.lambdatest.io");
-
-        cameraProductPage.checkVisual();
+            .get("https://ecommerce-playground.lambdatest.io/index.php?route=product/category&path=33");
+        this.cameraProductPage.checkVisual();
     }
 }

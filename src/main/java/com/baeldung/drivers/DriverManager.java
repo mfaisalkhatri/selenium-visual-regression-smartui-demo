@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class DriverManager {
 
-    protected WebDriver driver;
+    private WebDriver driver;
 
     public void startChromeInCloud() {
         final String LT_USERNAME = System.getenv("LT_USERNAME");
@@ -36,7 +36,7 @@ public class DriverManager {
         }
         this.driver.manage()
             .timeouts()
-            .implicitlyWait(Duration.ofSeconds(30));
+            .implicitlyWait(Duration.ofSeconds(20));
     }
 
     private static HashMap<String, Object> getLambdaTestOptions() {
